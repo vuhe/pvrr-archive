@@ -1,0 +1,16 @@
+[package]
+name = "indexer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+core = { path = "../core" }
+
+anyhow = "1"
+chrono = { version = "0.4", features = ["serde"] }
+hex = "0.4"
+sha1 = "0.10"
+
+serde = { version = "1", features = ["derive"] }
+bt_bencode = "0.7"
+quick-xml = { version = "0.29", features = ["serialize"] }

@@ -1,0 +1,10 @@
+[package]
+name = "matcher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+base_tool = { path = "../base_tool" }
+database = { path = "../database" }
+searcher = { path = "../searcher" }
+log = "0.4"

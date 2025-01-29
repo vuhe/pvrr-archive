@@ -1,0 +1,14 @@
+network:
+  # FlareSolverr ip 设置
+  flare-solverr-ip: "http://127.0.0.1:8191"
+  # 代理设置，支持 socks5, http 协议
+  proxy-url: "socks5://127.0.0.1:6153"
+
+jackett:
+  # Jackett URL
+  url: "http://127.0.0.1:9117"
+  # Jackett 访问 apikey
+  apikey: ""
+
+prowlarr:
+  url: "http://127.0.0.1:9696"

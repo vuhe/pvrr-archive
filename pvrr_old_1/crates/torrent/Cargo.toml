@@ -1,0 +1,13 @@
+[package]
+name = "torrent"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+bincode = "1"
+bt_bencode = "0.7"
+chrono = { version = "0.4", features = ["serde"] }
+hex = "0.4"
+serde = { version = "1", features = ["derive"] }
+sha1 = "0.10"

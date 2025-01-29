@@ -1,0 +1,25 @@
+[package]
+name = "pvrr"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [".", "crates/*", "module/*"]
+
+[profile.release]
+panic = 'abort'
+
+[dependencies]
+anyhow = "1"
+database = { path = "module/database" }
+dotenvy = "0.15"
+downloader = { path = "module/downloader" }
+log = "0.4"
+pt-client = { path = "module/pt_client" }
+searcher = { path = "module/searcher" }
+tokio = { version = "1", features = ["full"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter", "local-time"] }
+web_server = { path = "module/web_server" }
+
+[dev-dependencies]
+tokio-test = "0.4"

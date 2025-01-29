@@ -1,0 +1,23 @@
+[package]
+name = "pt-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+http-client = { path = "../../crates/http_client" }
+log = "0.4"
+once_cell = "1"
+rand = "0.8"
+regex = "1"
+scrapers = { path = "../../crates/scrapers" }
+serde = { version = "1", features = ["derive"] }
+serde_urlencoded = "0.7"
+serde_yaml = "0.9"
+tera = "1"
+tokio = { version = "1", features = ["time"] }
+torrent = { path = "../../crates/torrent" }
+uuid = { version = "1", features = ["v4"] }
+
+[dev-dependencies]
+tracing-subscriber = { version = "0.3", features = ["env-filter", "local-time"] }

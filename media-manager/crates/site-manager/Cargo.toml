@@ -1,0 +1,20 @@
+[package]
+name = "site-manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = "0.11"
+scraper = "0.15"
+serde_yaml = "0.9"
+
+cached = "0.42"
+regex = "1.7"
+chrono = "0.4"
+anyhow = "1.0"
+num = "0.4"
+
+## 数据库 ORM
+#[dependencies.sea-orm]
+#version = "0.11"
+#features = ["sqlx-sqlite", "runtime-tokio-native-tls", "macros"]

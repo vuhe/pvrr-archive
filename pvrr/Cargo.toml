@@ -1,0 +1,13 @@
+[package]
+name = "pvrr"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["crates/*"]
+
+[dependencies]
+#anyhow = "1"
+#poem = { version = "1", features = ["embed"] }
+#rust-embed = { version = "6", features = ["debug-embed"] }
+#serde = { version = "1", features = ["derive"] }
